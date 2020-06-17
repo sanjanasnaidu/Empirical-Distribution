@@ -1,0 +1,9 @@
+CREATE PROC [dbo].[register2]
+@empid int,
+@empname varchar(50),
+@username varchar(50),
+@password varchar(50),
+@email varchar(50)
+AS
+INSERT INTO register1(empid,empname,username,password,email)
+VALUES (@empid,@empname,@username,@password,@email)
